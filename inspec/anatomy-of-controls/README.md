@@ -16,7 +16,7 @@ Example of a resource:
 - ```user.username```
 
 ## Controls
-InSpec controls express expectations about the state of the resources on our system. 
+InSpec controls express expectations about the state of the resources on our system.
 - properties
 - conditions
 - matchers
@@ -31,7 +31,7 @@ end
 ```
 
 ## Components of Controls
-Controls has 
+Controls has
 - Properties like: ```baseurl, version, status```
 - Conditions like ```should, should_not```
 - Matchers like: ```exist, eq, be_installed, cmp```

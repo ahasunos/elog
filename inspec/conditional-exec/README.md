@@ -8,13 +8,13 @@ InSpec controls can be conditionally executed based on additional requirements e
       command('git').exist?
   end
   ```
-- if 
+- if
   ```
   if os.linux?
     ...
-  end  
+  end
   ```
-- describe.one 
+- describe.one
   ```
   describe.one do
     describe file('primary.cfg) do

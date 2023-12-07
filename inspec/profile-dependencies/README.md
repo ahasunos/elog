@@ -2,7 +2,7 @@
 InSpec profiles can bring in the controls from another InSpec profile. These dependencies are maintained in the metadata and captured in the profile's lockfile.
 
 Steps:
-- Let's consider we have two profiles viz. ```base_profile``` and ```child_profile``` which has different controls executed by them. 
+- Let's consider we have two profiles viz. ```base_profile``` and ```child_profile``` which has different controls executed by them.
 - If you do not have two profiles, create using ```inspec init profile [profile_name]``` for learning purpose.
 - We would like to execute ```child_profile``` which in turns should execute the controls present in the ```base_profile```.
 - Add dependency in the metadata of the ```child_profile``` i.e. ```inspec.yml``` as below
@@ -22,13 +22,13 @@ Steps:
   ```
 
 Possible reasons of failure for the ```child_profile``` not being able to execute controls present in the ```base_profile```
-- The ```inspec.lock``` file is not updated. To do this delete the file and execute the profile again. Other way to do this without deleting the ```inspec.lock``` file is to use ```--no-create-lockfile``` while executing the profile. Example:  
+- The ```inspec.lock``` file is not updated. To do this delete the file and execute the profile again. Other way to do this without deleting the ```inspec.lock``` file is to use ```--no-create-lockfile``` while executing the profile. Example:
   ```
   inspec exec child_profile --no-create-lockfile
   ```
 - The path to the profile is not set correctly in the ```inspec.yml``` file.
 
-Other ways to add depedency of other profile are as follows: 
+Other ways to add depedency of other profile are as follows:
 - via git:
   ```
     depends:
