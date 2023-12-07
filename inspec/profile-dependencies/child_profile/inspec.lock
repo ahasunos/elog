@@ -1,0 +1,8 @@
+---
+lockfile_version: 1
+depends:
+- name: base_profile
+  resolved_source:
+    path: "/Users/sosaha/Documents/LearningChefNRuby/getting-started-with-inspec/Part-6:
+      Profile Dependencies/base_profile"
+  version_constraints: []
