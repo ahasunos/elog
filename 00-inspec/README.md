@@ -1,4 +1,4 @@
-# Getting started with InSpec
+# InSpec
 
 - An open-source framework for testing and auditing your applications and infrastructure.
 - Turn Security and Compliance into code
